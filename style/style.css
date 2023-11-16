@@ -1,0 +1,340 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: small;
+    background-color: #FBE4D8;
+}
+
+
+header ,footer{
+    background-color: #854F6C;
+}
+
+
+/*header*/
+
+header{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+
+.logo{
+    text-align: center;
+}
+
+
+a,li{
+    text-decoration: none;
+    list-style: none; 
+    color: #111;
+}
+
+
+nav li{
+    
+    width: 100%;
+    text-align: center; 
+    margin: 10px 0;
+    
+}
+
+nav li:hover{
+    cursor: pointer;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    border-bottom: 3px solid black;
+}
+
+
+
+
+/*section*/
+
+
+.recherche{
+    text-align: center;
+}
+
+.card{
+    overflow:auto;
+}
+
+
+
+/*  bouton CSS copié sur getcssscan */
+
+.btn {
+  align-items: center;
+  background-color: #FBE4D8;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 30px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  transform: translate(0, 0);
+}
+
+.btn:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.btn:hover {
+  outline: 0;
+}
+
+
+
+
+
+
+
+
+#lastart ,#newart{
+    text-decoration: underline;
+
+}
+
+
+h2{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    
+    
+}
+
+
+
+
+h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.form {
+
+    margin: 10px 0px;  
+
+}
+
+
+.containerart{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.card{
+    background: #f2f2f2;
+    width: 330px;
+    height: 580px;
+    margin:  40px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    
+}
+
+
+.card:hover{
+    transform: translate(-5px);
+}
+
+
+
+.card .image1{
+    height: 170px;
+    background-image: url(images/microsoft.png);
+}
+
+
+.card .image2{
+    height: 170px;
+    background-image: url(images/ia.jpg);
+}
+
+.card .image3{
+    height: 170px;
+    background-image: url(images/data2.jpg);
+}
+
+
+.card .image4{
+    height: 170px;
+    background-image: url(images/cyber.jpg);
+}
+
+.card .image5{
+    height: 170px;
+    background-image: url(images/data.jpg);
+}
+
+.card .image6{
+    height: 170px;
+    background-image: url(images/perspective.jpg);
+}
+
+
+/*footer*/
+
+
+footer{
+    padding: 10px;
+}
+
+
+footer{
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a,li{
+    text-decoration: none;
+    list-style: none; 
+}
+
+footer li{
+    padding: 5px;
+    font-size: 15px;
+    
+}
+
+
+
+/* class js*/
+
+.invisible{
+    display:none;
+}
+
+
+.invisible2{
+    display:none;
+}
+
+
+.invisible3{
+    display:none;
+}
+
+.invisible4{
+    display:none;
+}
+
+.invisible5{
+    display:none;
+}
+
+.invisible6{
+    display:none;
+}
+
+.changenavbar{
+    background-color:#FFA586;
+}
+
+
+
+
+
+
+
+/*media*/
+
+
+@media screen and  (max-width:1100px){
+
+
+.logo img{
+    width: 250px;
+}
+
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav li:hover{
+    background-color: black;
+    color: #854F6C;
+}
+
+.containerart{
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+.card{ 
+    margin: 20px auto;
+}
+    
+}
+
+@media (min-width: 768px) {
+    .btn {
+      padding: 0 40px;
+    }
+  }
+  
+
